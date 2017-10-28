@@ -1,5 +1,16 @@
-body {
+html,
+body,
+#root
+{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  height: 100%; /* needed for proper layout */
+}
+
+body {
+  overflow: hidden;
+}
+
+p {
+  margin-bottom: 1em;
 }
