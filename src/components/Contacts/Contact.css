@@ -4,7 +4,8 @@
     padding: 20px;
 }
 
-.Contact button {
+.Contact a {
+    text-decoration: none;
     padding: 10px;
     font: inherit;
     border: 1px solid #213B82;
@@ -13,8 +14,8 @@
     cursor: pointer;
 }
 
-.Contact button:hover,
-.Contact button:active {
+.Contact a:hover,
+.Contact a:active {
     color: white;
     background-color: #213B82;
 }
