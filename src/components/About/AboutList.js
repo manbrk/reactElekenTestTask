@@ -8,7 +8,7 @@ class AboutList extends Component {
     render() {
         return (
           <div className="AboutList">
-            <h1 className="h1-left">About App</h1>
+            <h1>About App</h1>
             <ul>
               {this.aboutElements}
             </ul>
