@@ -1,14 +1,15 @@
 .Contact {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    font-size: 1.2em;
 }
 
 .Contact a {
     text-decoration: none;
     padding: 10px;
     font: inherit;
-    border: 1px solid #213B82;
     background-color: transparent;
     color: #1D325C;
     cursor: pointer;
@@ -16,6 +17,5 @@
 
 .Contact a:hover,
 .Contact a:active {
-    color: white;
-    background-color: #213B82;
+    color: black;
 }
