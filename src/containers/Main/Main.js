@@ -5,7 +5,7 @@ import './Main.css'
 import '../../components/About/AboutList.css'
 
 import Calendar from '../../components/Calendar/Calendar'
-import Contacts from '../../components/Contacts/Contacts'
+import ContactsList from '../../components/Contacts/ContactsList'
 import AboutList from "../../components/About/AboutList";
 
 class Main extends Component {
@@ -23,7 +23,7 @@ class Main extends Component {
         <div className="App-content">
           <Route path="/" exact component={AboutList}/>
           <Route path="/Calendar" exact component={Calendar}/>
-          <Route path="/Contacts" exact component={Contacts}/>
+          <Route path="/Contacts" exact component={ContactsList}/>
         </div>
         <div className="App-footer">The footer content goes here.</div>
       </div>
