@@ -2,13 +2,37 @@ import React, {Component} from 'react'
 
 class About extends Component {
 
-    render() {
-        return (
-            <div>
-              <h1>About component</h1>
-            </div>
-        )
-    }
+  state = {
+    isOpen: false
+  };
+
+  render() {
+    const {article} = this.props;
+
+    return (
+      <div>
+        <h1 onClick={this.toggleOpen}>{article.title}</h1>
+        {this.getBody()}
+      </div>
+    )
+  }
+
+  getBody() {
+    if (!this.state.isOpen) return null;
+    const {article} = this.props;
+
+    return (
+      <section>
+        {article.text}
+      </section>
+    )
+  }
+
+  toggleOpen = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    })
+  }
 }
 
 export default About
