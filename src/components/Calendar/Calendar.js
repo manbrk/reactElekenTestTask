@@ -5,26 +5,55 @@ import 'react-day-picker/lib/style.css'
 class Calendar extends Component {
   state = {
     from: null,
-    to: null
+    to: null,
   };
 
-  handleDayClick = (day) => {
-    this.setState(DateUtils.addDayToRange(day, this.state))
+  handleDayClick = day => {
+    const range = DateUtils.addDayToRange(day, this.state);
+    this.setState(range);
+  };
+
+  handleResetClick = e => {
+    e.preventDefault();
+    this.setState({
+      from: null,
+      to: null,
+    });
+  };
+
+  counterDays = (a, b) => {
+    const msPerDay = 1000 * 60 * 60 * 24;
+    const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+    const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+
+    return Math.floor((utc2 - utc1) / msPerDay) + 1
   };
 
   render() {
-    const {from, to} = this.state;
-    const selectRange = from && to && `${from.toDateString()} - ${to.toDateString()}`;
+    const { from, to } = this.state;
     return (
-      <div className="date-range">
+      <div className="RangeExample">
+        {!from && !to && <p>Please select the <strong>first day</strong>.</p>}
+        {from && !to && <p>Please select the <strong>last day</strong>.</p>}
+        {from &&
+        to &&
+        <p>
+          You chose
+          {' '}
+          {console.log(this.counterDays(this.state.from, this.state.to))}
+          {this.counterDays(this.state.from, this.state.to)}
+          {' '}
+          days.
+          {' '}<a href="." onClick={this.handleResetClick}>Reset</a>
+        </p>}
         <DayPicker
-          ref="daypicker"
-          selectedDays={day => DateUtils.isDayInRange(day, {from, to})}
+          numberOfMonths={2}
+          selectedDays={[from, { from, to }]}
           onDayClick={this.handleDayClick}
+          fixedWeeks
         />
-        {selectRange}
       </div>
-    )
+    );
   }
 }
 
