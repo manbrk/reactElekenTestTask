@@ -40,8 +40,9 @@ class Calendar extends Component {
         <p>
           You chose
           {' '}
-          {console.log(this.counterDays(this.state.from, this.state.to))}
-          {this.counterDays(this.state.from, this.state.to)}
+          <strong>
+            {this.counterDays(this.state.from, this.state.to)}
+          </strong>
           {' '}
           days.
           {' '}<a href="." onClick={this.handleResetClick}>Reset</a>
