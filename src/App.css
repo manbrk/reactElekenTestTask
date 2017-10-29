@@ -5,9 +5,15 @@
 }
 
 .App-header {
-    padding: 25px;
-    flex: 0 0 auto;
+    /*padding: 25px;*/
+    /*flex: 0 0 auto;*/
     background-color: #213B82;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .App-content {

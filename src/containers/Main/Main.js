@@ -14,11 +14,13 @@ class Main extends Component {
     return (
       <div className="App">
         <div className="App-header Main">
-          <ul>
-            <li><NavLink to="/" exact>About</NavLink></li>
-            <li><NavLink to="/calendar">Calendar</NavLink></li>
-            <li><NavLink to="/contacts">Contacts</NavLink></li>
-          </ul>
+          <div className="logo">Anatoly Goncharov</div>
+            <ul className="main-nav">
+              <li><NavLink to="/" exact>About</NavLink></li>
+              <li><NavLink to="/calendar">Calendar</NavLink></li>
+              <li><NavLink to="/contacts">Contacts</NavLink></li>
+            </ul>
+
         </div>
         <div className="App-content">
           <Route path="/" exact component={AboutList}/>
