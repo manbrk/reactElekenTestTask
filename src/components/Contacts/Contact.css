@@ -3,3 +3,18 @@
     justify-content: space-between;
     padding: 20px;
 }
+
+.Contact button {
+    padding: 10px;
+    font: inherit;
+    border: 1px solid #213B82;
+    background-color: transparent;
+    color: #1D325C;
+    cursor: pointer;
+}
+
+.Contact button:hover,
+.Contact button:active {
+    color: white;
+    background-color: #213B82;
+}

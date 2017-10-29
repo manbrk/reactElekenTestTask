@@ -21,15 +21,18 @@ export const contacts = [
     "id": "56c782f1e17f4f9311dfaa2c",
     "title": "E-Mail",
     "link": "mailto:manbrk@gmail.com",
+    "icon": "email"
   },
   {
     "id": "56c782f197fe2bad471b3740",
     "title": "LinkedIn",
     "link": "https://www.linkedin.com/in/anatoly-goncharov-20837bb3/",
+    "icon": "linkedin"
   },
   {
     "id": "56c782f1a2c2c3268ddb3206",
     "title": "GitHub",
     "link": "https://github.com/manbrk",
+    "icon": "github"
   },
 ];
