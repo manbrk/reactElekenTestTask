@@ -12,7 +12,9 @@ class About extends Component {
     return (
       <div>
         <h1 onClick={this.toggleOpen}>{article.title}</h1>
-        {this.getBody()}
+        <p>
+          {this.getBody()}
+        </p>
       </div>
     )
   }

@@ -7,7 +7,7 @@
 .App-header {
     padding: 25px;
     flex: 0 0 auto;
-    background-color: #dcdcdc;
+    background-color: #213B82;
 }
 
 .App-content {
@@ -15,10 +15,12 @@
     flex: 1 1 auto;
     position: relative; /* need this to position inner content */
     overflow-y: auto;
+    background-color: #FAFBFC;
 }
 
 .App-footer {
     padding: 20px;
     flex: 0 0 auto;
-    background-color: #dcdcdc;
+    color: #d5d5d5;
+    background-color: #1D325C;
 }

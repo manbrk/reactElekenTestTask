@@ -13,11 +13,12 @@
 
 .Main a {
     text-decoration: none;
-    color: black;
+    color: #d5d5d5;
 }
 
 .Main a:hover,
 .Main a:active,
 .Main a.active {
-    color: #fa923f;
+    color: white;
+    /*color: #fa923f;*/
 }
