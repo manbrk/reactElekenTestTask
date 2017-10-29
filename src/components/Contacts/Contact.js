@@ -10,7 +10,7 @@ class Contact extends Component {
     return (
       <div className="Contact">
         <div>{contact.title}</div>
-        <div><a href={contact.title}>Visit page</a></div>
+        <div><a href={contact.link}>Visit page</a></div>
       </div>
 
     )
