@@ -12,9 +12,7 @@ class About extends Component {
     return (
       <div>
         <h2 onClick={this.toggleOpen}>{article.title}</h2>
-        <p>
           {this.getBody()}
-        </p>
       </div>
     )
   }
@@ -24,9 +22,9 @@ class About extends Component {
     const {article} = this.props;
 
     return (
-      <section>
+      <p>
         {article.text}
-      </section>
+      </p>
     )
   }
 
