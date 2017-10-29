@@ -27,7 +27,7 @@ class Main extends Component {
           <Route path="/Calendar" exact component={Calendar}/>
           <Route path="/Contacts" exact component={ContactsList}/>
         </div>
-        <div className="App-footer">The footer content goes here.</div>
+        <div className="App-footer"> © 2017 Cool stuff here</div>
       </div>
     )
   }
