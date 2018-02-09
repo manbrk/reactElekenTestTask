@@ -1,4 +1,4 @@
-## reactElekenTestTask
+## reactTT
 
 Demo [here](https://reactelekentesttask.firebaseapp.com/).
 
